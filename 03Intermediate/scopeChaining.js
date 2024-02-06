@@ -27,3 +27,17 @@ language should search for a particular variable or function.
 In simple terms, when you ask for a variable or function, the language starts by checking the innermost scope (the current block or function).
 If it doesn't find what you're looking for there, it moves outward to the next outer scope and continues this process
 until it either finds the desired item or reaches the outermost scope.*/
+
+//Lexical Scoping
+
+function init() {
+    var name = "Mozilla"; // name is a local variable created by init
+    function displayName() {
+      // displayName() is the inner function, that forms the closure
+      console.log(name); // use variable declared in the parent function
+    }
+    displayName();
+  }
+  init();
+
+  

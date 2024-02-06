@@ -29,3 +29,10 @@ console.log(output);
 // or
 
 console.log(sayHiii());
+
+
+//Self executing anonymous functions
+
+(function () {
+    console.log("Hello India");
+}) ();
